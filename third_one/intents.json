@@ -1,0 +1,45 @@
+{
+    "intents": [
+      {
+        "intent": "greeting",
+        "patterns": [
+          "Hello",
+          "Hi",
+          "How are you",
+          "Hey"
+        ],
+        "responses": [
+          "Hello, how can I help you?",
+          "Hi there! How can I assist you?",
+          "Hey! What can I do for you?"
+        ]
+      },
+      {
+        "intent": "goodbye",
+        "patterns": [
+          "Bye",
+          "See you later",
+          "Goodbye",
+          "Take care"
+        ],
+        "responses": [
+          "Goodbye! Have a great day.",
+          "See you later!",
+          "Take care, hope to talk to you soon."
+        ]
+      },
+      {
+        "intent": "age",
+        "patterns": [
+          "How old are you?",
+          "What is your age?",
+          "How old is the bot?"
+        ],
+        "responses": [
+          "I am a chatbot, I don't have an age!",
+          "I am timeless! Age doesn't apply to me."
+        ]
+      }
+    ]
+  }
+  
