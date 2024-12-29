@@ -45,6 +45,13 @@ x_ind = tf.gather(x, indices)  # gathers the first index and the 3rd index
 # Corrected part
 x = tf.constant([[1, 2], [3, 4], [5, 6]])  # 2D tensor
 
-print(x[0])  # prints the first row of the tensor
-print(x[0,:]) # does the same thing as above
-print(x[0:2, :1]) # print the first and second row of the tensor, the ,: specifies which characters we tak from each row
+#print(x[0])  # prints the first row of the tensor
+#print(x[0,:]) # does the same thing as above
+#print(x[0:2, :1]) # print the first and second row of the tensor, the ,: specifies which characters we tak from each row
+
+x = tf.range(9)
+print(x)
+
+x = tf.reshape(x, (3, 3)) #reshaping the tesnor
+
+x = tf.transpose(x, perm=[1,0]) #this will swap the axis
